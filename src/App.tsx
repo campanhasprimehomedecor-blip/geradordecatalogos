@@ -32,6 +32,7 @@ const INITIAL_CONFIG: CatalogConfig = {
   couponCode: "COPA06OFF",
   title: "Promoção especial de Copa do Mundo",
   subtitle: "Use o cupom COPA06OFF e aproveite 6% de desconto nos produtos selecionados.",
+  couponText: "Use o cupom COPA06OFF para obter descontos incríveis nos produtos selecionados.",
   footerText: "Prime Home Decor — Catálogo especial de Copa do Mundo",
   backgroundColor: "#ffffff"
 };
@@ -677,6 +678,18 @@ export default function App() {
                       onChange={(e) => handleConfigChange("couponCode", e.target.value)}
                       placeholder="Ex: COPA06OFF"
                       className="w-full bg-slate-900 border border-slate-800 rounded-lg py-2 px-3 text-slate-200 uppercase font-mono font-bold tracking-wider focus:outline-none focus:border-[#D1A72F]"
+                    />
+                  </div>
+
+                  {/* Texto do Card do Cupom */}
+                  <div>
+                    <label className="block text-slate-400 font-semibold mb-1">Texto de Apoio / Instruções do Cupom (Opcional)</label>
+                    <textarea
+                      value={config.couponText || ""}
+                      onChange={(e) => handleConfigChange("couponText", e.target.value)}
+                      placeholder="Ex: Use o cupom para obter descontos incríveis nos produtos selecionados."
+                      rows={2}
+                      className="w-full bg-slate-900 border border-slate-800 rounded-lg py-2 px-3 text-slate-200 focus:outline-none focus:border-[#D1A72F] resize-none"
                     />
                   </div>
 
@@ -1407,10 +1420,14 @@ export default function App() {
                       </button>
                     </div>
                     <p 
-                      className="text-[11px] mt-3 font-medium"
+                      className="text-[11px] mt-3 font-medium whitespace-pre-line"
                       style={{ color: config.subtitleColor || "#4B5563" }}
                     >
-                      Use o cupom <strong style={{ color: config.couponTextColor || "#0E2C29" }}>{config.couponCode}</strong> para obter descontos incríveis nos produtos selecionados.
+                      {config.couponText || (
+                        <>
+                          Use o cupom <strong style={{ color: config.couponTextColor || "#0E2C29" }}>{config.couponCode}</strong> para obter descontos incríveis nos produtos selecionados.
+                        </>
+                      )}
                     </p>
                   </div>
                 </div>
@@ -1470,7 +1487,7 @@ export default function App() {
                             <div className="p-4 flex flex-col flex-grow justify-between text-left">
                               <div>
                                 <h4 
-                                  className="font-semibold text-xs md:text-sm leading-snug mb-1.5 min-h-[36px] line-clamp-2"
+                                  className="font-semibold text-xs md:text-sm leading-snug mb-1.5"
                                   style={{ color: config.cardTextColor || "#1F2937" }}
                                 >
                                   {p.name || "Sem Nome"}

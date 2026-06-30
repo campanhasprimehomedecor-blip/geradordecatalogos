@@ -32,4 +32,5 @@ export interface CatalogConfig {
   cardBgColor?: string;
   cardTextColor?: string;
   productSectionBgColor?: string;
+  couponText?: string;
 }

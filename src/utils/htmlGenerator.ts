@@ -40,7 +40,7 @@ export function generateSingleFileHTML(config: CatalogConfig, products: Product[
         </div>
         <div class="p-5 flex flex-col flex-grow justify-between">
           <div>
-            <h3 class="font-semibold text-base md:text-lg leading-tight mb-2 min-h-[44px] line-clamp-2" style="color: ${cardText};">
+            <h3 class="font-semibold text-base md:text-lg leading-tight mb-2" style="color: ${cardText};">
               ${p.name}
             </h3>
             <div class="mb-4">
@@ -156,7 +156,7 @@ export function generateSingleFileHTML(config: CatalogConfig, products: Product[
         </button>
       </div>
       <p class="text-xs mt-4 font-medium" style="color: ${subtitleColor};">
-        Use o cupom <strong style="color: ${couponText}; font-weight: 700;">${config.couponCode}</strong> para obter descontos incríveis nos produtos selecionados.
+        ${config.couponText || `Use o cupom <strong style="color: ${couponText}; font-weight: 700;">${config.couponCode}</strong> para obter descontos incríveis nos produtos selecionados.`}
       </p>
     </div>
   </section>

@@ -216,7 +216,9 @@ export const generateCatalogPDF = async (
   doc.setFont("helvetica", "normal");
   doc.setFontSize(8);
   doc.setTextColor(config.subtitleColor || "#4B5563");
-  doc.text("Use o cupom no carrinho de compras e aproveite os descontos selecionados.", pageWidth / 2, currentY + 18.5, { align: "center" });
+  const couponDesc = config.couponText || "Use o cupom no carrinho de compras e aproveite os descontos selecionados.";
+  const couponDescLines = doc.splitTextToSize(couponDesc, couponWidth - 10);
+  doc.text(couponDescLines.slice(0, 2), pageWidth / 2, currentY + 18, { align: "center" });
   currentY += couponHeight + 10;
 
   // E. Section Header "Produtos em Destaque"
@@ -308,28 +310,28 @@ export const generateCatalogPDF = async (
 
     // Draw Name
     doc.setFont("helvetica", "bold");
-    doc.setFontSize(8.5);
+    doc.setFontSize(8);
     doc.setTextColor(config.cardTextColor || "#1F2937");
     const nameLines = doc.splitTextToSize(p.name || "Sem Nome", cardWidth - 8);
-    // Draw up to 2 lines of text
-    doc.text(nameLines.slice(0, 2), x + 4, y + cardWidth + 2);
+    // Draw up to 3 lines of text
+    doc.text(nameLines.slice(0, 3), x + 4, y + cardWidth + 2);
 
     // Draw Price
     doc.setFont("helvetica", "bold");
-    doc.setFontSize(10.5);
+    doc.setFontSize(10);
     doc.setTextColor(config.buttonBgColor || "#0E2C29");
-    doc.text(p.price || "R$ 0,00", x + 4, y + cardWidth + 10.5);
+    doc.text(p.price || "R$ 0,00", x + 4, y + cardWidth + 12);
 
     // Draw Installment Price (if present)
     if (p.installmentPrice) {
       doc.setFont("helvetica", "normal");
       doc.setFontSize(7);
       doc.setTextColor(100, 116, 139); // slate-500
-      doc.text(p.installmentPrice, x + 4, y + cardWidth + 14);
+      doc.text(p.installmentPrice, x + 4, y + cardWidth + 15.5);
     }
 
     // Draw CTA Button
-    const btnY = y + cardWidth + 18;
+    const btnY = y + cardWidth + 19.5;
     const btnH = 8;
     const btnW = cardWidth - 8;
     const btnX = x + 4;

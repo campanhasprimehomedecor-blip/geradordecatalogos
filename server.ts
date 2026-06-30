@@ -13,6 +13,7 @@ const INITIAL_CONFIG: CatalogConfig = {
   couponCode: "COPA06OFF",
   title: "Promoção especial de Copa do Mundo",
   subtitle: "Use o cupom COPA06OFF e aproveite 6% de desconto nos produtos selecionados.",
+  couponText: "Use o cupom COPA06OFF para obter descontos incríveis nos produtos selecionados.",
   footerText: "Prime Home Decor — Catálogo especial de Copa do Mundo",
   backgroundColor: "#ffffff"
 };

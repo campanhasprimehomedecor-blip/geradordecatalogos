@@ -1,0 +1,68 @@
+{
+  "config": {
+    "logoUrl": "https://i.imgur.com/m87tydP.png",
+    "bannerUrl": "https://i.imgur.com/AcOPGk8.png",
+    "couponCode": "COPA06OFF",
+    "title": "Promoção especial de Copa do Mundo",
+    "subtitle": "Use o cupom COPA06OFF e aproveite 6% de desconto EM TODOS OS PRODUTOS DO SITE!!!",
+    "couponText": "Use o cupom COPA06OFF para obter descontos incríveis nos produtos selecionados.",
+    "footerText": "Prime Home Decor — Catálogo especial de Copa do Mundo",
+    "backgroundColor": "#0E2C29",
+    "subtitleColor": "#ffffff",
+    "textColor": "#ffffff",
+    "couponBgColor": "#767e01",
+    "productSectionBgColor": "#0E2C29",
+    "cardBgColor": "#fbff00",
+    "cardTextColor": "#0E2C29",
+    "textAlignment": "center",
+    "fontFamily": "Montserrat"
+  },
+  "products": [
+    {
+      "id": "p1",
+      "name": "Par de Poltronas Clássicas Verde com Dourado 132x90x76cm",
+      "price": "R$ 9.948,00",
+      "imageUrl": "https://images.tcdn.com.br/img/img_prod/1200797/par_de_poltronas_clssicas_verde_com_dourado_2_20260608092654_f1de4baba253.jpg",
+      "linkUrl": "https://www.primehomedecor.com.br/par-de-poltronas-classicas-verde-com-dourado",
+      "installmentPrice": "R$ 829,00"
+    },
+    {
+      "id": "p2",
+      "name": "Jogo de Sofá Clássico com Par de Poltronas Verde com Dourado 147x225x87cm",
+      "price": "R$ 25.068,00",
+      "imageUrl": "https://images.tcdn.com.br/img/img_prod/1200797/jogo_de_sof_clssico_com_par_de_poltronas_verde_com_2_20260608094230_cc267c43499d.jpg",
+      "linkUrl": "https://www.primehomedecor.com.br/jogo-de-sofa-classico-com-par-de-poltronas-verde-com-dourado",
+      "installmentPrice": "12x de R$ 2.089,00 "
+    },
+    {
+      "id": "p3",
+      "name": "Jogo de Sofá Clássico com Par de Poltronas Verde com Dourado 115x77x88cm 132x220x80cm",
+      "price": "R$ 15.000,00",
+      "imageUrl": "https://images.tcdn.com.br/img/img_prod/1200797/jogo_de_sof_clssico_com_par_de_poltronas_verde_com_2_20260608095553_4713b53ca2c0.jpg",
+      "linkUrl": "https://www.primehomedecor.com.br/jogo-de-sofa-classico-com-par-de-poltronas-verde-com-dourado-42572",
+      "installmentPrice": "12x de R$ 1.250,00 "
+    },
+    {
+      "id": "p4",
+      "name": "Par de Poltrona Clássicas em Veludo Verde com Dourada Conjunto com 2 Unidades 95x79x56cm",
+      "price": "R$ 7.188,00",
+      "imageUrl": "https://images.tcdn.com.br/img/img_prod/1200797/par_de_poltrona_verde_com_dourado_95x79x56cm_2_20260206094906_5f63c89fedc3.jpg",
+      "linkUrl": "https://www.primehomedecor.com.br/par-de-poltrona-verde-com-dourado-95x79x56cm",
+      "installmentPrice": "12x de R$ 599,00"
+    },
+    {
+      "id": "p5",
+      "name": "Jogo com 6 Taças em Cristal Verde Para Flute 23x7cm",
+      "price": "R$ 948,00",
+      "imageUrl": "https://images.tcdn.com.br/img/img_prod/1200797/jogo_com_6_taas_em_cristal_verde_para_flute_23x7cm_2_20260629095836_33a1ccda42a3.jpg",
+      "linkUrl": "https://www.primehomedecor.com.br/jogo-com-6-tacas-em-cristal-verde-para-flute-23x7cm-42696"
+    },
+    {
+      "id": "p6",
+      "name": "Garrafa Térmica Verde com Detalhes Dourados - 1L",
+      "price": "R$ 180,00",
+      "imageUrl": "https://images.tcdn.com.br/img/img_prod/1200797/garrafa_trmica_verde_com_detalhes_dourados_1l_2_20260406094707_5c8934aba809.jpg",
+      "linkUrl": "https://www.primehomedecor.com.br/lancamentos/garrafa-termica-verde-e-detalhes-dourado-1l"
+    }
+  ]
+}
