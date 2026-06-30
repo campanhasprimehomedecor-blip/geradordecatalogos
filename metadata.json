@@ -1,0 +1,6 @@
+{
+  "name": "Prime Home Decor - Catálogo",
+  "description": "Catálogo digital de produtos selecionados para a promoção de Copa do Mundo da Prime Home Decor.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
